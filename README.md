@@ -227,5 +227,3 @@ Para precisão ainda maior, considere:
 ---
 
 Desenvolvido para máxima precisão com o sensor GP2Y0A41SK0F
-
-
