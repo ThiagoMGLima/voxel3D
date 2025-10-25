@@ -15,21 +15,21 @@ Sistema completo para teste e calibração do sensor de distância infravermelho
 ```
 RASPBERRY PI 4          ADS1115           GP2Y0A41SK0F
 ─────────────          ────────          ─────────────
-                                         
-3.3V/5V (Pino 1) ────> VDD               
+
+3.3V/5V (Pino 1) ────> VDD
 GND (Pino 6) ────────> GND <──────────── GND (Pino 1)
-GPIO2/SDA (Pino 3) ──> SDA               
-GPIO3/SCL (Pino 5) ──> SCL               
+GPIO2/SDA (Pino 3) ──> SDA
+GPIO3/SCL (Pino 5) ──> SCL
                        A0 <────────────── Vo (Pino 3)
-                       ADDR ───┐          
-                              ─┴─ GND     
+                       ADDR ───┐
+                              ─┴─ GND
 5V (Pino 2) ─────────────────────────> Vcc (Pino 2)
 
 ```
 
 ### Pinagem GP2Y0A41SK0F:
 1. GND (Preto)
-2. Vcc 5V (Vermelho)  
+2. Vcc 5V (Vermelho)
 3. Vo - Saída analógica (Amarelo)
 
 ### Pinagem ADS1115:
@@ -227,3 +227,5 @@ Para precisão ainda maior, considere:
 ---
 
 Desenvolvido para máxima precisão com o sensor GP2Y0A41SK0F
+
+
