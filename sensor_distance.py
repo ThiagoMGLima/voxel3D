@@ -35,7 +35,7 @@ class GP2Y0A41SK0F:
         self.ads.data_rate = samples_rate
 
         # Canal analógico
-        channels = [ADS.P0, ADS.P1, ADS.P2, ADS.P3]
+        channels = [ADS.Pin.A0, ADS.Pin.P1, ADS.Pin.P2, ADS.Pin.P3]
         self.channel = AnalogIn(self.ads, channels[ads_channel])
 
         # Parâmetros do sensor GP2Y0A41SK0F
