@@ -2,9 +2,9 @@ import RPi.GPIO as GPIO
 import time
 
 # --- Configuração dos Pinos GPIO (use os números BCM) ---
-STEP_PIN = 17  # GPIO 17
-DIR_PIN = 27   # GPIO 27
-ENABLE_PIN = 22 # GPIO 22
+STEP_PIN = 11  # GPIO 11
+DIR_PIN = 13   # GPIO 13
+ENABLE_PIN = 15 # GPIO 15
 
 # --- Configuração da Rotação ---
 # 200 passos * 16 microsteps = 3200 pulsos para 360 graus
