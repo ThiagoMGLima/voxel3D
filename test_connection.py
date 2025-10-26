@@ -28,8 +28,9 @@ except Exception as e:
 # Teste 2: Detectar ADS1115
 print("\n[2/4] Procurando ADS1115...")
 try:
-    import adafruit_ads1x15.ads1115 as ADS
-    ads = ADS.ADS1115(i2c)
+    from adafruit_ads1x15 import ADS1115, AnalogIn, ads1x15
+
+    ads = ADS1115(i2c)
     print("✓ ADS1115 detectado")
     print(f"  Endereço I2C: 0x48 (padrão)")
 except Exception as e:
@@ -46,14 +47,13 @@ except Exception as e:
 # Teste 3: Configurar canal analógico
 print("\n[3/4] Configurando canal analógico...")
 try:
-    from adafruit_ads1x15.analog_in import AnalogIn
 
     # Configura ganho e taxa de amostragem
     ads.gain = 1  # Ganho 1 = ±4.096V
     ads.data_rate = 128  # 128 amostras por segundo
 
     # Canal 0 (A0)
-    channel = AnalogIn(ads, ADS.P0)
+    channel = AnalogIn(ads, ads1x15.Pin.A0)
     print("✓ Canal A0 configurado")
     print(f"  Ganho: 1 (±4.096V)")
     print(f"  Taxa: 128 SPS")
