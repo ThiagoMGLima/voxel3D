@@ -30,7 +30,7 @@ class GP2Y0A41SK0F:
         """
         # Configuração I2C e ADS1115
         self.i2c = busio.I2C(board.SCL, board.SDA)
-        self.ads = ADS1115(self.i2c)
+        self.ads = ADS(self.i2c)
         self.ads.gain = gain
         self.ads.data_rate = samples_rate
 
