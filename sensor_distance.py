@@ -7,7 +7,7 @@ Sensor de distância IR Sharp (4-30cm) com ADS1115
 import time
 import board
 import busio
-import adafruit_ads1x15.ads1115 as ADS
+import adafruit_ads1115 as ADS
 from adafruit_ads1x15.analog_in import AnalogIn
 import numpy as np
 from scipy import signal, interpolate
